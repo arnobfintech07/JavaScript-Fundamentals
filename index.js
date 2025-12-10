@@ -278,13 +278,19 @@ function practiceAdd() {
 // }
 // document.writeln(x)
 
+
+
+
 //STRING
+
+
+
 
 //1.To REverse a String
 function ds(s) {
   return s.split("").reverse().join("");
 }
-console.log(ds("Hello"));
+
 
 //3. Find the Longest Word in a Sentence
 
@@ -301,7 +307,7 @@ function findLongestWord(str) {
 
   return longest;
 }
-console.log(findLongestWord("I am Arnoc Saha Arnob"));
+
 
 //2. Count Vowels
 //input string
@@ -322,12 +328,15 @@ function checkVoules(inputData) {
   return flag;
 }
 
-let output;
-output = checkVoules("hEllo world! this is a sentence");
 
-console.log(output);
+
+
+
+
 
 //NUMBER
+
+
 
 //1.Even Or Odd
 
@@ -338,7 +347,7 @@ function checkEvenOrOdd(n) {
     return "odd";
   }
 }
-console.log(checkEvenOrOdd(51));
+
 
 //3.Prime OR NOT
 function isPrime(n) {
@@ -355,7 +364,7 @@ function isPrime(n) {
   }
 }
 
-console.log(isPrime(2));
+
 
 function isPrime(num) {
   // returns boolean
@@ -368,7 +377,7 @@ function isPrime(num) {
   }
   return true;
 }
-console.log(isPrime(3));
+
 
 // 2. Sum Of DIgits
 
@@ -381,7 +390,7 @@ function sumDigits(n) {
   return sum;
 }
 
-console.log(sumDigits(13));
+
 
 // try another one
 function sumDigits2(n) {
@@ -395,7 +404,16 @@ function sumDigits2(n) {
 }
 sumDigits2(123498);
 
+
+
+
+
+
 //FUNCTION
+
+
+
+
 
 //1.square(num)
 
@@ -403,14 +421,14 @@ function square(num) {
   let z = num * num;
   return z;
 }
-console.log(square(2));
+
 
 //2.Default Parameters
 
 function greet(name = "Guest") {
   return "Hello" + " " + name;
 }
-console.log(greet());
+
 
 //3.. Higher-Order Function – Custom Filter      //Problem
 
@@ -429,7 +447,7 @@ function findMax(arr) {
 
   return max;
 }
-console.log(findMax(["1", "2", "3"]));
+
 
 //2. Remove Duplicates
 
@@ -453,7 +471,7 @@ const studentGrades = new Map([
   ["Bob", 92],
   ["John", 74],
 ]);
-console.log(studentGrades);
+
 
 //2.
 const studenttGrades = new Map([
@@ -465,8 +483,7 @@ const revStudentGrades = new Map(
   [...studentGrades].map(([key, value]) => [value, key])
 );
 
-console.log(studenttGrades);
-console.log(revStudentGrades);
+
 
 //3.Count Word Frequency
 
@@ -481,10 +498,12 @@ function wordFreqMap(str) {
   });
 }
 
-const str = "geeks for geeks is for geeks";
-const result = wordFreqMap(str);
+// const str = "geeks for geeks is for geeks";
+// const result = wordFreqMap(str);
 
-console.log(Object.keys(result[0]), Object.values(result[0]));
+// console.log(Object.keys(result[0]), Object.values(result[0]));
+
+
 
 //SET
 
@@ -499,11 +518,24 @@ function setIntersection(a,b) {
   return a.intersection(b);
 
 }
-const input_setIntersection_a = new Set(["a", "b", "c"]);
-const imput_setIntersection_b = new Set(["b", "c", "d"]);
+const GiveStuGrades = (studenttGrades);//to show the student grades
+const ShowreverseGrades = (revStudentGrades);//to show the reverse
+
+const createMap = (studentGrades);//Creating a map
+const SumOfDigits= (sumDigits(13));//Sum of Digits
+const checkPrime = (isPrime(2)); //To check prime 
+
+const EvenOrODd = (checkEvenOrOdd(51));//Even or odd
+const Check_Vowels = checkVoules("hEllo world! this is a sentence");// check Vowels
+
+const longest_word=(findLongestWord("I am Arnoc Saha Arnob"));//to find the longest word
+const reverse_string = (ds("Hello"));//to reverse a string
+const find_Max = findMax(["1", "2", "3"]);//Max of an array
+const input_name = greet();// for showing the name of the guest
+
+const input_number = square(2); // for square
+const input_setIntersection_a = new Set(["a", "b", "c"]); //for setIntersection parameter a
+const imput_setIntersection_b = new Set(["b", "c", "d"]); //for setIntersection parameter b
+
 let input_arrayToSet = ["1", "2", "3", "4", "4", "5", "5"]
-let input ="";
-
-
-let final_result = arrayToSet(input);
-console.log(result)
+const ArrayToSet = arrayToSet();//To Convert Array to set
